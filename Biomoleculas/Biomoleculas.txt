@@ -1,0 +1,45 @@
+DESAFÍO I: ¿Podrías buscar un ejemplo de macromoléculas que almacenen información sobre la ‘identidad’ de un organismo dado?
+    Un ejemplo de una macromoléculas que almacenen información sobre la ‘identidad’ de un organismo dado es el ADN (ácido desoxirribonucleico). La información en el ADN se almacena como un código compuesto por cuatro bases químicas, adenina (A), guanina (G), citosina (C) y timina (T).
+
+
+DESAFÍO II: Proponé una forma de expresar la información contenida en la estructura primaria de las proteínas usando tipos de datos de los lenguajes de programación que conocés.
+    podriamos representarlas como un String, Array , Queue, un tree, grafo o cualquier estructura con orden. 
+
+DESAFÍO III: ¿ En qué tipo de datos podrías expresar la información de la estructura terciaria proteica?
+    Se podrian representar en Matrices(su implementacion puede variar) o Grafos.
+
+DESAFÍO IV: Rosalind Franklin es una científica muy relevante, que tuvo menos reconocimiento del merecido. ¿Cuáles fueron sus contribuciones en este campo? ¿Qué nos cuenta su historia acerca del mundo de la ciencia?
+
+    Contribuciones en el campo :
+        Rosalind Franklin, que sentó las bases de lo que sabemos sobre el ADN y específicamente sobre la estructura de doble hélice de la cadena de ADN. Estp revoluciono el modo en que la humanidad vemos ve a las plantas y los animales, y 
+        ha cambiado el abordaje de la medicina 
+
+    Lo que nos cuenta su historia sobre la ciencia : 
+        Franklin como otras figuras cientificas, su trabajo fue subestimado y apropiado por colegas que se robaron su merito. Mucho tiempo despues recibio su reconocimiento. Otra característica a mensionar es la ciencia como
+        una fuerza colavorativa, osea que los descubrimientos no son sucesos unitarios sino que se basan en la investigación de inumerables personas.
+
+
+DESAFÍO V: Escribí un scrip en Python que prediga la estructura secundaria que adoptará cada residuo (aminoácido) de la secuencia proteica dada, especificandola como H (si es una hélice), B (si es una hoja beta plegada) y L (si es un bucle o loop).
+
+
+
+PREGUNTAS DISPARADORAS: ¿Qué inputs tendría tu programa? ¿De qué modo se te ocurre configurar el output? ¡Guardate esta idea, la vamos a usar más adelante!
+    Los inputs serian sequencias y los outpust son de tipo String
+
+
+PARA PENSAR: ¿Cuántas proteínas puede sintetizar un organismo? ¿De qué depende la cantidad y la característica de las proteínas que puede sintetizar un organismo? 
+    Un organismo puede sintetizar proteínas distintas dependiendo la cantidad de genes codificantes diferentes que tenga en su genoma.
+    La cantidad y la característica de las proteínas que se sintentizan en un organismo depende de las sequencias codificantes dentor de un ARN mensajero.
+
+
+DESAFÍO VI: ¿Qué hace distintos a dos individuos de una especie? Propone una forma de corroborar tu respuesta realizando un diagrama de un posible método computacional para dicho fin.
+    La combinación de su genotipo (variación en el ADN), su patrón de expresión génica (Diferencias en cuántos transcritos (RNA) o proteínas se producen en tejidos específicos o tiempos distintos)
+    Se podria alinear ambos genomas y si la igualdad es de un 98 %  se podria asumir que es de la misma especie.
+
+PREGUNTAS DISPARADORAS: ¿Qué información deberías tener? ¿De qué modo deberías expresar dicha información para el análisis?
+    La información que deberia estar disponible es la secuencia del adn del los individuos y debia representar la información con un porcentaje de relacion.     
+
+DESAFÍO VII (Ejercicio basado en Rosalind): Los motivos lineales son elementos de secuencia que comúnmente se encuentran en dominios intrínsecamente desordenados. Consisten, en promedio, de cinco residuos que determinan la función y participan en interacciones proteína-proteína (Podes leer más aquí).
+
+
+Desafío VIII: Dada la siguiente lista de sequencias, realizar el una representación Logo
