@@ -1,0 +1,65 @@
+DESAFÍO I )
+
+Procariotas : 
+    - No tienen núcleo definido, ADN libre en el citoplasma (nucleoide). 
+    - Circular, generalmente una sola molécula. 
+    - División celular por Fisión binaria. 
+    - Unicelulares (más simples). 
+    - Aparecieron primero
+
+Eucariotas : 
+    - Núcleo delimitado por membrana nuclear. 
+    - Lineal, organizado en varios cromosomas. 
+    - División celular por Mitosis y meiosis. 
+    - Pueden ser uni o multicelulares.(más complejas) 
+    - Aparecieron después, hace ~1.500 millones de años.
+
+
+PARA PENSAR (procariotas)
+
+En procariotas:
+
+- No hay núcleo, así que transcripción y traducción ocurren al mismo tiempo y en el mismo lugar (citoplasma).
+- No usan ARN Polimerasa II como en eucariotas, sino su propia ARN polimerasa más simple.
+
+DESAFÍO II )
+
+table = {
+    'A': 'GCU', 'R': 'CGU', 'N': 'AAU', 'D': 'GAU',
+    'C': 'UGU', 'Q': 'CAA', 'E': 'GAA', 'G': 'GGU',
+    'H': 'CAU', 'I': 'AUU', 'L': 'UUA', 'K': 'AAA',
+    'M': 'AUG', 'F': 'UUU', 'P': 'CCU', 'S': 'UCU',
+    'T': 'ACU', 'W': 'UGG', 'Y': 'UAU', 'V': 'GUU',
+    '*': 'UAA'  # STOP
+}
+
+def protein_to_mrna(protein_seq):
+    mrna_seq = ""
+    for aa in protein_seq:
+        if aa in table:
+            mrna_seq += table[aa]
+        else:
+            mrna_seq += "???"
+    return mrna_seq
+
+
+
+DESAFÍO III ) 
+
+def encontrar_cajas_tata(dna_seq):
+    dna_seq = dna_seq.upper()
+    promotoras = []
+    start = 0
+
+    while True:
+        inicio = dna_seq.find("TATAAA", start)
+        if inicio == -1:
+            break
+        fin = dna_seq.find("TATAAA", inicio + 1)
+        if fin != -1:
+            promotoras.append((inicio, fin+6, dna_seq[inicio:fin+6]))
+            start = fin + 1
+        else:
+            break
+    return promotoras
+

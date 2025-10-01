@@ -1,0 +1,94 @@
+def juego_expresion_genica():
+    print("Bienvenido a la Aventura de la Expresión Génica")
+    print("Eres un gen que sueña con convertirse en una proteína funcional.")
+    print("Tu misión: sobrevivir a todos los pasos de la expresión génica.\n")
+
+    puntos = 0
+
+    
+    print("Paso 1: Transcripción")
+    eleccion = input("Tu ARN polimerasa llega, pero hay un virus cerca. ¿Quieres activar la caja TATA (a) o esperar (b)? ")
+    if eleccion.lower() == "a" or eleccion.lower() == "s":
+        print("✅ La ARN polimerasa se une y la transcripción comienza.")
+        puntos += 10
+    else:
+        print("❌ El virus bloquea tu promotor. No se inicia la transcripción.")
+
+    
+    print("\n Paso 2: Modificación 5’ cap")
+    eleccion = input("El ARNm recién transcrito necesita protección. ¿Agregar cap 5’ (s/n)? ")
+    if eleccion.lower() == "s":
+        print("✅ El cap protege al ARNm de nucleasas.")
+        puntos += 10
+    else:
+        print("(Cuidado) El ARNm queda inestable, perderás puntos.")
+        puntos -= 5
+
+    
+    print("\n Paso 3: Splicing (eliminación de intrones)")
+    eleccion = input("Elige la estrategia de splicing: (a) Eliminar todos los intrones, (b) dejar algunos intrones: ")
+    if eleccion.lower() == "a":
+        print("✅ ARN maduro correctamente procesado.")
+        puntos += 15
+    else:
+        print("❌ Los intrones generan proteína no funcional.")
+
+    
+    print("\n Paso 4: Transporte nuclear")
+    eleccion = input("¿Quieres salir del núcleo por el poro nuclear (s/n)? ")
+    if eleccion.lower() == "s":
+        print("✅ El ARNm llega al citoplasma.")
+        puntos += 10
+    else:
+        print("❌ Te quedaste atrapado en el núcleo, fin de la aventura.")
+
+    
+    print("\n Paso 5: Traducción")
+    eleccion = input("El ribosoma está listo. ¿Dónde quieres empezar? (a) AUG, (b) UUU: ")
+    if eleccion.lower() == "a":
+        print("✅ Inicio correcto en el codón de inicio AUG (Met).")
+        puntos += 20
+    else:
+        print("❌ Te iniciaste en el codón equivocado, proteína defectuosa.")
+
+    
+    print("\n Paso 6: Mutaciones")
+    mutacion = random.choice(["silenciosa", "missense", "nonsense", "ninguna"])
+    if mutacion == "silenciosa":
+        print("(Cuidado) Mutación silenciosa: no altera tu proteína.")
+        puntos += 5
+    elif mutacion == "missense":
+        print("(Cuidado) Mutación missense: cambiaste un aminoácido.")
+        puntos -= 5
+    elif mutacion == "nonsense":
+        print("❌ Mutación nonsense: codón STOP prematuro. No lograste ser proteína completa.")
+    else:
+        print("✅ No hubo mutaciones, la traducción sigue bien.")
+        puntos += 10
+
+    
+    print("\n Paso 7: Plegamiento proteico")
+    eleccion = input("¿Quieres ayuda de chaperonas para plegarte? (s/n): ")
+    if eleccion.lower() == "s":
+        print("✅ Las chaperonas te ayudan a plegarte correctamente.")
+        puntos += 15
+    else:
+        print("(Cuidado) Intentas plegarte solo... corres riesgo de agregarte mal.")
+        if random.random() < 0.5:
+            print("❌ Te plegaste mal y te degradan en el proteasoma.")
+        else:
+            print("Milagrosamente te plegaste bien.")
+            puntos += 5
+
+
+    print("\n GAME OVER ")
+    print(f"Tu puntaje final es: {puntos}")
+    if puntos >= 60:
+        print(" ¡Eres una proteína funcional y estable!")
+    elif 40 <= puntos < 60:
+        print(" Lograste ser proteína, pero con errores.")
+    else:
+        print(" No lograste ser proteína funcional.")
+
+
+juego_expresion_genica()
