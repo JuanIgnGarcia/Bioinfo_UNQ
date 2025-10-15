@@ -1,0 +1,47 @@
+Secuencia 	              Nombre taxonómico 	                Nombre común
+------------------------------------------------------------------------------------
+NP_061820.1 	            Homo sapiens 	                        Humano
+NP_001072946.1 	            Gallus gallus 	                        Gallo asiático
+NP_001065289.1 	            Pan troglodytes 	                    Chimpancé
+NP_001157486.1 	            Equus caballus 	                        Caballo
+NP_001183974.1 	            Canis lupus familiaris 	                Perro
+AEP27192.1 	                Gorilla gorilla 	                    Gorilla
+XP_024245566.1 	            Oncorhynchus tshawytscha 	            Salmón 
+NP_001086101.1 	            Xenopus laevis 	                        Rana Africana
+NP_477164.1 	            Drosophila melanogaster 	            Mosca de la fruta
+
+
+
+
+PARA PENSAR 🤔:¿Cuán sencillo será alinear dos o más secuencias a mano? ¿Cuánto influirán el número de secuencias a alinear, su longitud, y la similitud entre ellas?
+    - No seria complejo sino que es una tarea que se necesite mucho tiempo. El "costo" del alineamiento seria longitud de la secuencia mas larga * cantidad de secuencias
+
+PARA PENSAR 🤔:¿Son parecidos los citocromos c de humano y gallo?
+    - Los citocromos c de humano y gallo son parecidos, solo difieren en pocas ocaciones
+
+PARA PENSAR 🤔:¿Qué teorías subyacen a este análisis?
+    -   Las teorías que subyacen este analisis son : Hipótesis del “reloj molecular” , Teoría de la conservación funcional y Teoría de la homología molecular
+
+PARA PENSAR 🤔:¿Cómo nos ayuda la evolución a explicar sus similitudes y diferencias?
+    -   Los citocromos c son parte de la respiracion celular un proceso critico y esto conlleva que la mayoria de mutaciones que se desarollen no prosperen en el tiempo.
+
+PARA PENSAR 🤔:¿Qué indican los colores?
+    Azul → aminoácidos cargados positivos
+    Rojo → aminoácidos cargados negativos 
+    Verde → hidrofóbicos
+    Cian → polares sin carga 
+    Amarillo → Cisteína 
+
+PARA PENSAR 🤔:¿Qué indican el guión (-), los dos puntos (:) y el asterisco (*)?
+    -   Guion (-) → representa un gap: una inserción o eliminacion en alguna secuencia respecto a las demás.
+    -   Dos puntos (:) → los aminoácidos de esa columna no son idénticos, pero son químicamente similares
+    -   Asterisco (*) → todos los aminoácidos de esa columna son idénticos en todas las secuencias alineadas.
+
+PARA PENSAR 🤔: A simple vista, ¿se conserva la secuencia del citocromo c en los organismos?
+    -   Sí. Aunque hay algunas diferencias puntuales la mayor parte de las secuencias alineadas son identicas .  
+
+PARA PENSAR 🤔: ¿Creeríamos que todos los organismos se asemejan por igual al resto, o se pueden identificar grupos de mayor similitud? Si es así, ¿tienen sentido?
+    -   Hay organismos son mas similares entre ellos que el resto por ejemplo el humano,Chimpancé y el gorilla. Tiene sentido porque su antecesor mas reciente es mas cercano que el resto
+
+PARA PENSAR 🤔: ¿Qué evidencias nos aportaría este análisis, a la luz de la evolución?
+Evidencia que todos los los individuos comparten una misma proteína con la misma función como tambien un antecesor en común.

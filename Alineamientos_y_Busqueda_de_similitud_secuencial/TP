@@ -1,0 +1,45 @@
+PARA PENSAR 🤔: ¿Qué tipo de información se puede extraer de la comparación de secuencias? ¿Cómo esperás que se vea en una comparación?
+
+- Se puede extraer la criticidad del caracter a comparar, su cambio durante la evolucion.
+  Se puede ver una secuencias abajo de otra indicando las diferencias y/o similitudes en las distintas i pocisiones
+
+PARA PENSAR 🤔: ¿Por qué crees que es mejor evaluar las relaciones evolutivas lejanas comparando proteínas? 🤔
+
+- Es mejor porque es mas informativa que las comparaciones entre secuencias de ácidos nucleicos
+
+PREGUNTAS DISPARADORAS: ¿Existe una única forma de alinearlas? ¿Es alguno de los posibles alineamientos mejor que otro? Si así fuera ¿Por qué?
+
+No es la unica forma de realizar un alineamiento, un alineamiento que da mas similitudes es que comparar por final (Empezar por el ultima letra)
+
+M   A   N   Z   A   N   A 
+-   B   A   N   A   N   A
+✅             ✅  ✅ ✅  
+
+PREGUNTAS DISPARADORAS: ¿Qué representan esos guiones?
+
+Los guiones representan espacios vacios para igualar la longitud de las cadenas a comparar 
+
+
+RETO II: En la siguiente tabla probá distintos alineamientos para las palabras "ANA" y "ANANA".
+Verás que en el margen superior izquierdo aparece un valor de identidad calculado para cada alineamitno que intentes. 
+Tomá nota de los valores de identidad observados y de las conclusiones que se desprendan de estas observaciones
+
+A   N   A   -   -
+A   N   A   N   A
+✅ ✅ ✅  ✅  ✅ 
+ 
+Penalidad = 0 -> 0.6 = 3/5 - (2/5*0)  siendo 2 la cantidad de gaps (-)
+Penalidad = 1 -> 0.2 = 3/5 - (2/5*1)
+Penalidad = 2 -> - 0.2 = 3/5 - (2/5*2)
+
+PARA PENSAR: Entonces, pensando en un alineamiento de ácidos nucleicos 
+¿Cuáles te parece que son las implicancias de abrir un gap en el alineamiento? 
+¿Qué implicaría la inserción o deleción de una región de más de un residuo?
+
+La implicancias es la capacidad de comparacion entre varios alineamientos y la implicancias es la pocibilidad de hacer distintas comparaciones con la mismas secuencias
+
+
+RETO IV: En la siguiente tabla probá distintos alineamientos para las secuencias nucleotídicas. 
+Podrás ver las traducciones para cada secuencia. 
+Probá varias combinaciones, tomá nota de las observaciones y de las conclusiones que se desprendan de estas. 
+Consigna: Alineá "TGCGAGG" y "TGCCGAAGG" y mirá las traducciones
