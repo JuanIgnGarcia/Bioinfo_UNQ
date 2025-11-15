@@ -1,0 +1,23 @@
+DESAFÍO I: Detalla las tácticas y/o metodologías que deberían utilizarse para darles una respuesta a los padres del niño. Dadas las secuencias de Mosca, humano y Moscahumano 
+¿Qué criterios se les ocurren para comparar las secuencias? ¿Qué resultados obtienen del análisis anterior? ¿Qué resultado esperaría obtener si utilizara el resto de las secuencias
+ en el análisis? ¿Por qué?
+
+- Para comparar secuencias debera tener verificacion la calidad de la secuencia como tambien su longitud y una amplia pool de secuencias a comparar mejora la comparacion.
+- El resultado obtenido es un árbol con unos bajos bootstrap en la mayor parte de la topología. 
+- Si alineás secuencias completas humanas, de mosca y el fragmento de bartmosca. El árbol mostrará dos clados amplios uno humano y otro de mosca (vertebrados y insectos), dependiendo la similitud
+del fragmento de bartmosca se agruparia en uno de esos 2 clados.
+
+DESAFÍO II: Como vimos anteriormente existen algunos softwares optimizados para confeccionar alineamientos de secuencias. En particular hemos trabajado con Clustal (Larkin et al. 2007). 
+Confecciona el alineamiento para el punto I.
+
+DESAFÍO III: Mediante el uso del servidor de IQtree (Trifinopoulos et al. 2016), confecciona los árboles filogenéticos para los alineamientos obtenidos en el punto II.
+ Como vemos, el servidor nos permite elegir el modelo de sustitución ¿A qué se refiere? ¿Qué es el Bootstrap? ¿De qué manera nos habla de la calidad de nuestro árbol? 
+ ¿Cómo influye el número de Bootstraps en el resultado? Interpreten los resultados obtenidos, mediante la visualización de los árboles con la herramienta FigTree. 
+ ¿Es necesario realizar algún paso extra, previo a la interpretación del árbol? ¿Por qué?
+
+- Nos permite elegir el modelo de sustitución para poder calcular de una manera especifica el arbol (sus distancias)
+- El Bootstrap es la frecuencia aparece cada clado
+- Mientras el Bootstrap sea mas alto nos esta diciendo la confiabilidad del mismo, porque es mas dificil que sea una respuesta alatoria.
+- El valor del Bootstraps menor de 60% es muy malo, no nos sirve para indicar nada, 60% a 80% es malo pero nos indica algunas pautas mientras que superior a 80% se considera un buen 
+    valor de bootstrap
+- si es necesario, para subir el Bootstraps hay que cambiar el root por el el mas lejano, esto proboco que subiera el bootstrap de un 40% a un 60%

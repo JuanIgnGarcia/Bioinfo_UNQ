@@ -1,0 +1,21 @@
+Teoria 
+a. Docking Flexible 
+    Docking Flexible permite que el ligando como el target adopten diferentes conformaciones durante el proceso de acoplamiento.
+    Este método intenta representar de forma más realista la naturaleza dinamica de las moleculas El docking flexible es más computacionalmente costoso
+
+b. Docking Rigido 
+    Docking Rigido se considera/asume que tanto el ligando como la diana son componentes rigidos, sin grados de libertad internos. 
+    Este método es más rápido y menos exigente computacionalmente, lo cual lo hace útil como primera alternativa en programas de docking nuevos.
+
+c. Virtual Screening
+    El objetivo principal del cribado virtual es diferenciar, de entre un conjunto de pequenas moleculas o ligandos, aquellas que teoricamente pueden encajar en una cavidad para bloquear/activar la funcion de una determinada diana de las que no.
+    Dado que los metodos teoricos mas fiables son a su vez lo mas costosos computacionalmente, y que el numero de moleculas con el que se trata es bastante elevado. El protocolo de VS se configura como una serie de filtros sucesivos donde la complejidad del filtro aumenta a medida que el numero de moleculas va disminuyendo.
+
+
+Practicas
+
+1-
+
+2-
+
+3-

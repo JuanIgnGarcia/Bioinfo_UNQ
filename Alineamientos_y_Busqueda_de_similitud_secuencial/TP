@@ -39,7 +39,44 @@ PARA PENSAR: Entonces, pensando en un alineamiento de ácidos nucleicos
 La implicancias es la capacidad de comparacion entre varios alineamientos y la implicancias es la pocibilidad de hacer distintas comparaciones con la mismas secuencias
 
 
-RETO IV: En la siguiente tabla probá distintos alineamientos para las secuencias nucleotídicas. 
-Podrás ver las traducciones para cada secuencia. 
-Probá varias combinaciones, tomá nota de las observaciones y de las conclusiones que se desprendan de estas. 
-Consigna: Alineá "TGCGAGG" y "TGCCGAAGG" y mirá las traducciones
+
+PARA PENSAR 🤔: ¿En qué consiste la programación dinámica? ¿Por qué crees que es útil en este caso?
+
+La programación dinámica es una técnica de diseño de algoritmos que se utiliza para resolver problemas donde se observa superposision de problemas (muchos problemas pequelos 
+que se calculan repetidas veces) de forma optimia, resolviendo cada uno una sola vez y almacenando sus resultados para evitar cálculos repetidos y es util en este caso porque el 
+alineamiento de secuencias implica comparar muchas combinaciones posibles, y la programación dinámica permite evaluar todas las rutas sin repetir cálculos, asegurando encontrar el 
+alineamiento global óptimo de forma eficiente.
+
+RETO VI: Utilizando la herramienta interactiva desarrolladas por el Grupo de Bioinformática de Freiburg probá distintos Gap penalties para el ejemplo propuesto 
+y observá lo que ocurre.
+
+la matriz se construye calculando el mejor puntaje posible para cada posición, comparando las dos secuencias carácter por carácter.
+Cada celda de la matriz representa el mejor alineamiento posible entre un fragmento de la secuencia A y un fragmento de la secuencia B.
+
+
+PARA PENSAR 🤔: ¿En qué casos serán de utilidad uno u otro tipo de alineamientos? ¿Qué limitaciones tendrá cada uno?
+En caso de comparar secuencias similares en longitud y composición o buscar homología completa entre genes o proteínas se usaria el alineamiento global. mientras que el 
+alineamiento local se usaria para detectar regiones conservadas o motivos similares dentro de secuencias largas y diferentes.
+
+sus limitaciones son :
+ global -> Rendimiento bajo si las secuencias son de longitudes muy distintas y penalizaciones fuertes en regiones no conservadas
+ local -> No da información sobre el alineamiento total y puede ignorar grandes regiones no conservadas.
+
+
+RETO VII: calculá el E-value y % identidad utilizando el programa Blast de la siguiente secuencia input usando 20000 hits, un e-value de 100 y tomando aquellos hits con un mínimo de 70% cobertura. Observe y discuta el comportamiento de : E-value vs. % id, Score vs % id, Score vs E-value
+
+RETO VIII:
+
+con 50 % de la secuencia considen al 100 % mas secuencias acomparacion de tener la sentencia completa. mientras que con 25 % hay mas considencias.
+Mientras compares secuencia mas cortas aumentan las considencias porque hay menos a comparar.
+
+
+RETO IX:
+  Utilizando BLAST utilice búsquedas de similitud secuencial para identificar a la siguiente proteína:
+
+MIDKSAFVHPTAIVEEGASIGANAHIGPFCIVGPHVEIGEGTVLKSHVVVNGHTKIGRDNEIYQFASIGEVNQDLKYAGEPTRVEIGDRNRIRESVTIHRGTVQGGGLTKVGSDNLLMINAHIAHDCTVGNRCILANNATLAGHVSVDDFAIIGGMTAVHQFCIIGAHVMVGGCSGVAQDVPPYVIAQGNHATPFGVNIEGLKRRGFSREAITAIRNAYKLIYRSGKTLDEVKPEIAELAETYPEVKAFTDFFARSTRGLIR
+
+PRK05289
+
+RETO X: Realizá una nueva corrida del BLASTp, utilizando la misma secuencia , pero ahora contra la base de datos PDB. ¿Se obtienen los mismos resultados? ¿Qué tipo de resultados(hits) se recuperan? ¿Cuándo nos podría ser útil este modo de corrida?
+-

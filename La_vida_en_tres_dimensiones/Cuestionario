@@ -1,0 +1,123 @@
+PARA PENSAR :¿Por qué una célula querría destruir sus propias proteínas?
+
+    Las celulas destruyen sus proteínas para Reciclaje de componentes o regulación de procesos celulares :
+
+    Reciclaje de componentes: La destrucción de proteínas libera aminoácidos, que la célula puede reutilizar para sintetizar nuevas proteínas u otras moléculas esenciales.
+
+    Regulación de procesos celulares: La destrucción controlada de proteínas es crucial para la regulación de procesos como el ciclo celular, asegurando que ciertas proteínas solo estén activas durante un período de tiempo muy específico. Esto ayuda a que las etapas del ciclo celular se desarrollen de forma unidireccional e irreversible.
+
+
+PARA PENSAR :¿Qué información nos provee esta página?
+
+    La página nos porvee información estructural y experimental, por ejemplo:
+
+    - Estructura tridimensional : modelo 3D de la proteína con la posición de cada átomo.
+    - Método experimental: cómo se obtuvo la estructura (en este caso, cristalografía de rayos X).
+    - Resolución del experimento: cuán precisa es la posición de los átomos.
+    - Interacciones biológicas: otras proteínas o moléculas que se unen a la ubiquitina.
+    - Detalles del experimento: condiciones del cristal, autoría, año, referencias, etc.
+
+
+ PARA PENSAR :¿Cómo se determinó la estructura de esta proteína? A la izquierda vemos una representación de la estructura de ubiquitina. ¿Qué significan las cintas, las flechas y las regiones angostas?
+
+    La estructura se determinó por cristalografía de rayos X,el método que consiste en:
+        1- Cristalizar la proteína.
+        2- Hacer pasar rayos X a través del cristal.
+        3- Analizar el patrón de difracción resultante para deducir la posición de los átomos.
+
+    En la representación gráfica:
+    Cintas : representan regiones de la proteína donde la cadena forma una espiral estable.
+    Flechas : zonas donde la cadena se pliega formando láminas planas.
+    Regiones angostas: corresponden a zonas menos estructuradas o con mayor flexibilidad.
+
+PARA PENSAR :¿Representa esa imagen a la realidad del sistema biológico?
+    La imagen es una representación simplificada y estática de la molécula, un modelo.
+
+PARA PENSAR :La estructura 1UBQ fue “refinada a una resolución de 1.8 Angstroms”. Éste es el error asociado al experimento: mientras mayor es la resolución, menor es la certeza al determinar la posición de cada átomo ¿Cuál es la utilidad y los condicionamientos de usar un modelo científico que sabemos inexacto?
+
+    Todo modelo científico es una aproximación de la realidad.
+    Permite explicar fenómenos y hacer predicciones como tambien facilitar la comprensión y comunicación de sistemas complejos.
+
+
+PARA PENSAR : ¿Qué significan las cintas, las flechas y las regiones angostas? 
+    En la representación gráfica:
+    Cintas : representan regiones de la proteína donde la cadena forma una espiral estable.
+    Flechas : zonas donde la cadena se pliega formando láminas planas.
+    Regiones angostas: corresponden a zonas menos estructuradas o con mayor flexibilidad.
+
+
+PARA PENSAR :¿Qué diferencias y similitudes notamos respecto de la representación inicial? 
+    Ambas muestran la misma proteína y se conservan las zonas de hélices y láminas.
+    Cambiando el modo de representación permite ver distintos niveles de detalle. Se pueden aplicar colores según propiedades
+
+PARA PENSAR : En el menú de la izquierda hay opciones de distintos tipos de representación y formas de colorear la estructura tridimensional. ¿Para qué podría ser útil visualizar lo mismo de distintas maneras?
+
+
+PARA PENSAR :¿Qué información esperaría encontrar como resultado un experimento destinado a determinar la estructura terciaria de una molécula biológica?
+    Esperaría encontrar :
+        Las coordenadas espaciales (x, y, z) de cada átomo.
+        La identidad química de los átomos (elemento, tipo de residuo, número de cadena).
+        Los enlaces.
+        Datos sobre la precisión del modelo. 
+
+PARA PENSAR : ¿En qué consiste un archivo PDB?        
+    El formato PDB (Protein Data Bank) permite la descripción y anotación de las estructuras de proteínas y ácidos nucleicos, incluyendo coordenadas atómicas, asignaciones de estructuras secundarias y conectividad atómica. Además, se almacenan metadatos experimentales.
+
+PARA PENSAR :Desplacémonos por el archivo hasta encontrar las líneas que comienzan con la palabra ATOM. ¿Qué tipo de información brinda esta sección?
+    Cada línea “ATOM” representa un átomo individual y contiene informacion como:
+
+    Número de átomo.
+    Tipo de átomo.
+    Número en la secuencia.
+    Coordenadas X, Y, Z.
+
+
+PARA PENSAR :¿Podríamos extraer de este archivo información sobre la estructura primaria de la proteína en cuestión? ¿Cómo se presenta dicha información y qué significa la representación? Desde el punto de vista computacional: ¿de qué tipo de dato se trata esta información?
+    Sí se podria extraer la estructura primaria, ya que corresponde a la secuencia lineal de aminoácidos, y puede reconstruirse a partir de los residuos listados en la sección “ATOM”.
+
+PARA PENSAR : ¿Considera que el formato PDB es útil para presentar los resultados del experimento?
+    Es un estándar, permite reproducir y visualizar los resultados en programas especializados. El formato PDB es útil como parte de los resultado del experimento.
+
+PARA PENSAR : Observamos que la información respeta cierta estructura interna. ¿Cuáles son los beneficios y las limitaciones de imponer una estructura para comunicar los resultados de un experimento?    
+    Beneficios:
+        Facilita la organización, comprensión y comparación de datos.
+        Permite el intercambio de resultados entre laboratorios.
+        Aumenta la transparencia y reproducibilidad científica.
+
+    Limitaciones:
+        Podria restringir la creatividad.
+        Podria no capturar toda la complejidad del fenómeno.
+
+DESAFÍO I: Compará el sitio activo de ambos confórmeros (posición 837) así como también los tamaños de los pockets. ¿Qué observás?
+
+DESAFÍO II: Investigá la proteína usando la base de datos Uniprot y anotá los sitios relevantes biológicamente
+
+Organism-specific databases
+
+DisGeNET  1109
+MIM  600451
+gene  614279  phenotype
+MalaCards  AKR1C4
+OpenTargets  ENSG00000198610
+Orphanet  443087  46,XY difference of sex development due to testicular 17,20-desmolase deficiency
+PharmGKB  PA24680
+
+
+Family & Domains
+
+GeneTree  ENSGT00940000163771
+HOGENOM   CLU_023205_0_0_1
+InParanoid   P17516
+OMA  SNFTCTK
+OrthoDB  416253at2759
+PAN-GO  P17516  9 GO annotations based on evolutionary models
+PhylomeDB  P17516
+TreeFam  TF106492
+eggNOG  KOG1577 Eukaryota
+
+
+
+
+
+
+DESAFÍO III :Analizá la estructura PDB 2FVLB) ¿Cuántas cavidades fueron predichas para dicha estructura? ¿Hay alguna cavidad drogable? ¿Coincide con algún sitio de relavancia biológica?

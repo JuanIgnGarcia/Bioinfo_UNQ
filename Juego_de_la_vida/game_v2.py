@@ -163,13 +163,24 @@ def jugar_nivel(nivel, jugador):
         seqs.append(generar_gene(codones, i == correcta_idx, mutation_rate))
 
     imprimir_titulo()
-    print(Fore.CYAN + f"ETAPA A: Identificación del gen (Nivel {nivel})\n")
+    print(Fore.CYAN + f"""ETAPA A: Identificación del gen (Nivel {nivel})
+
+    Te encuentras dentro del núcleo de una célula eucariota.
+    Debes identificar cuál de las siguientes secuencias representa un gen completo.
+    Solo un gen contiene:
+        - Un promotor funcional 
+        - Un codón de inicio 
+        - Un codón de terminación 
+    Recuerda: si eliges mal, el ARN polimerasa no podrá transcribir un producto completo.
+""")
+    
     for i, s in enumerate(seqs):
         print(f"{i+1}. {formatear_con_espacios(s, 3)}")
     ans = input(Fore.YELLOW + "\n¿Cuál contiene el promotor? (1,2 o 3): ").strip()
 
     if ans == str(correcta_idx+1):
-        print(Fore.GREEN + " Correcto: detectaste el promotor.")
+        print(Fore.GREEN + """ Correcto: has identificado correctamente el gen funcional.
+            La ARN polimerasa II podrá unirse al promotor e iniciar la transcripción..""")
         puntos += 2
     else:
         print(Fore.RED + f" Incorrecto. Era la {correcta_idx+1}.")
